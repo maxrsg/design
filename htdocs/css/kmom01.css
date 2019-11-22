@@ -15,7 +15,6 @@
     display: none;
 }
 
-
 * {
     margin: 0;
     padding: 0;
@@ -35,7 +34,6 @@ p {
     position: fixed;
     max-height: 40px;
 }
-
 
 .region-header-col-2 {
     width: 80%;

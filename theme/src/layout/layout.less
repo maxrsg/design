@@ -11,7 +11,7 @@
 @bgColor: #fff;
 @accentColor: #19a4ce;
 @lightTextColor: #fff;
-@footerBg: #272727;
+@footerBg: #414040;
 
 /**
  * General layout
@@ -246,6 +246,29 @@
     background: @footerBg;
     color: @lightTextColor;
     border-top: 2px solid @primaryColor;
+    width: 100%;
+
+    .footer-column-wrapper {
+        max-width: 70%;
+        margin-left: 15%;
+    }
+    
+    .footer-column {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    h4 {
+        color: @accentColor;
+    }
+
+    a {
+        color: @accentColor;
+    }
+
+    hr {
+        color: @accentColor;
+    }
 }
 
 .footer-column-wrapper {

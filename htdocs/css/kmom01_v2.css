@@ -329,48 +329,17 @@ p {
     display: none;
   }
 }
-@media screen and (max-width: 1260px) {
-  .article {
-    width: 80%;
-    margin-left: 10%;
-  }
-}
-@media screen and (max-width: 1024px) {
-  .article .figure img {
-    width: 200px !important;
-  }
-  .article p {
-    max-width: 90% !important;
-  }
-  .row > .region-sidebar-left {
-    width: 30%;
-  }
-  .row > .region-sidebar-left .block {
-    margin-left: 0;
-    width: 90%;
-  }
-  .has-sidebar {
-    width: 80%;
-  }
-}
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 865px) {
   .rm-desktop {
     display: none;
   }
-  .article .figure {
+}
+@media screen and (max-width: 700px) {
+  .article .figure.right {
+    max-width: 300px;
     float: none;
   }
-  .article .figure img {
-    width: 300px !important;
-  }
-  .article p {
-    max-width: 100% !important;
-  }
-  .wrap-sidebar {
-    display: none;
-  }
-  .has-sidebar {
-    margin-left: 5%;
+  .article .figure.right img {
     width: 100%;
   }
 }

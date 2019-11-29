@@ -19,12 +19,12 @@
 @fontSizeH6: 1.25em;
 
 // header h1-h6 borders
-@colorH1BorderBottom: #666;
-@colorH2BorderBottom: #CCC;
-@colorH3BorderBottom: #EEE;
-@colorH4BorderBottom: #EEE;
-@colorH5BorderBottom: #EEE;
-@colorH6BorderBottom: #EEE;
+@colorH1BorderBottom: @accentColor;
+@colorH2BorderBottom: @accentColor;
+@colorH3BorderBottom: @accentColor;
+@colorH4BorderBottom: @accentColor;
+@colorH5BorderBottom: @accentColor;
+@colorH6BorderBottom: @accentColor;
 @borderSizeH1: 1px;
 @borderSizeH2: 1px;
 @borderSizeH3: 1px;
@@ -38,10 +38,10 @@
 @lineHeightCodeBlock: 1.5;
 
  // fontsize super and subscripts
- @fontSizeSupSub: 0.75em;
+@fontSizeSupSub: 0.75em;
 
  // fontsize smaller
- @fontSizeSmall: 0.875em;
+@fontSizeSmall: 0.875em;
 
 @colorTypographyMark: #000;
 @bgColorTypographyMark:  #ff9;
@@ -63,7 +63,7 @@
 @bgColorTableRowHover:      #f6f6f6;
 @colorTableRowBorderHover:  #666;
 
-@bgColorHr: #fff;
+@bgColorHr: none;
 
 
 
@@ -480,12 +480,12 @@
     /**
      * Enable all default typographic elements.
      */
-     .activateDefaultTypography() {
-         #desinax-hgrid.typographyHeadings();
-         #desinax-hgrid.typographyTextElements();
-         #desinax-hgrid.typographyCodeElements();
-         #desinax-hgrid.typographyListElements();
-         #desinax-hgrid.typographyTableElements();
-         #desinax-hgrid.typographyOtherElements();
-     }
+    .activateDefaultTypography() {
+        #desinax-hgrid.typographyHeadings();
+        #desinax-hgrid.typographyTextElements();
+        #desinax-hgrid.typographyCodeElements();
+        #desinax-hgrid.typographyListElements();
+        #desinax-hgrid.typographyTableElements();
+        #desinax-hgrid.typographyOtherElements();
+    }
 }

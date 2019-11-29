@@ -8,66 +8,21 @@
     }
 }
 
-@media screen and (max-width: 1260px) {
-    // homepage article 
-    .article {
-        width: 80%;
-        margin-left: 10%;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .article {
-        .figure img {
-            width: 200px !important;
-        }
-
-        p {
-            max-width: 90% !important;
-        }
-    }
-
-    // sidebars 
-    .row > .region-sidebar-left {
-        width: 30%;
-
-        .block {
-            margin-left: 0;
-            width: 90%;
-        }
-    }
-
-    .has-sidebar {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 865px) {
     .rm-desktop {
         display: none;
     }
+}
 
+@media screen and (max-width: 700px) {
     .article {
-        .figure {
+        .figure.right {
+            max-width: 300px;
             float: none;
+
+            img {
+                width: 100%;
+            }
         }
-
-        .figure img {
-            width: 300px !important;
-        }
-
-        p {
-            max-width: 100% !important;
-        }
-    }
-
-    // sidebars
-    .wrap-sidebar {
-        display: none;
-    }
-
-    .has-sidebar {
-        margin-left: 5%;
-        width: 100%;
     }
 }

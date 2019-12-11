@@ -53,6 +53,11 @@ return [
             "text" => "Test",
             "url" => "test",
             "title" => "Testsida",
-        ],  
+        ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapportsida",
+        ]
     ],
 ];

@@ -3,16 +3,11 @@
  */
 
 // General
-// //@navbarAccentColor:         #9FB129;
-// @navbarItemBgColor:         inherit; //#444;
-// @navbarItemColor:           inherit;
-// @navbarItemHoverColor:      inherit; //lighten(@navbarItemColor, 20%);
-// @navbarItemHoverBgColor:    inherit; //#666;
-
-@navbarItemBgColor:         #fff; //#444;
-@navbarItemColor:           @primaryColor;
-@navbarItemHoverColor:      @accentColor;
-@navbarItemHoverBgColor:    #fff; //#666;
+//@navbarAccentColor:         #9FB129;
+@navbarItemBgColor:         inherit; //#444;
+@navbarItemColor:           inherit;
+@navbarItemHoverColor:      inherit; //lighten(@navbarItemColor, 20%);
+@navbarItemHoverBgColor:    inherit; //#666;
 
 // Menu item current/selected
 @navbarItemSelectedColor:       inherit;
@@ -35,7 +30,7 @@
 //@navbarMenuButtonHoverBorderColor:   #333;
 
 // The menu button clicked
-@navbarMenuButtonClickedColor:          @primaryColor;
+@navbarMenuButtonClickedColor:          #9FB129;
 @navbarMenuButtonClickedBgColor:        @navbarMenuButtonHoverBgColor;
 //@navbarMenuButtonClickedBorderColor:    lime;
 
@@ -54,7 +49,7 @@
 @maxMenuItemClickedBgColor: transparent; //@navbarMenuButtonClickedColor;
 @maxButtonColor:            inherit;
 @maxButtonClickedColor:     @navbarMenuButtonClickedColor;
-@maxButtonSubmenuBgColor:    inherit;
+@maxButtonSubmenuBgColor:    #444;
 @maxButtonSubmenuHoverBgColor: #ccc;
 
 /**
@@ -82,6 +77,8 @@
 //    position: fixed;
 //    overflow: hidden;
 }
+
+
 
 /**
  * Meny layout for the small buttonized menu.
@@ -165,7 +162,7 @@ a.rm-button {
     }
 
      // The base for the submenu
-    ul {
+     ul {
         position: absolute;
         z-index: @submenuZIndex;
         left: -9999px;
@@ -177,14 +174,14 @@ a.rm-button {
         }
 
         li {
-            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
-        }
+            box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
+         }
 
-        // Submenu
-        ul {
-            left: -9999px;
-        }
-    }
+         // Submenu
+         ul {
+             left: -9999px;
+         }
+     }
 }
 
 
@@ -230,6 +227,8 @@ a.rm-button {
                 background-color: @navbarItemHoverBgColor;
             }
         }
+
+
 
         // Hover over a menu item and display submenu
         &:hover {

@@ -4780,7 +4780,7 @@ a.rm-button .rm-button-face-2 {
   transition: color 0.1s ease;
 }
 a.rm-button.rm-clicked {
-  color: #333;
+  color: #9FB129;
   background-color: transparent;
 }
 a.rm-button.rm-clicked .rm-button-face-1 {
@@ -4816,7 +4816,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   left: 0;
 }
 .rm-default ul li {
-  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0);
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.4);
 }
 .rm-default ul ul {
   left: -9999px;
@@ -4825,7 +4825,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  * Menu layout for the desktop variant, usually full width of browser.
  */
 .rm-desktop ul {
-  background-color: #fff;
+  background-color: inherit;
 }
 .rm-desktop li {
   position: relative;
@@ -4835,12 +4835,12 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   text-decoration: underline;
 }
 .rm-desktop li a {
-  color: #333;
-  background-color: #fff;
+  color: inherit;
+  background-color: inherit;
 }
 .rm-desktop li a:hover {
-  color: #777;
-  background-color: #fff;
+  color: inherit;
+  background-color: inherit;
 }
 .rm-desktop li:hover > ul {
   left: 0;
@@ -4899,7 +4899,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
   color: inherit;
 }
 .rm-max .rm-small .rm-button.rm-clicked {
-  color: #333;
+  color: #9FB129;
   position: fixed;
   top: 16px;
   right: 24px;
@@ -4933,7 +4933,7 @@ a.rm-button.rm-clicked .rm-button-face-2 {
 .rm-max .rm-mobile .rm-submenu-button {
   float: right;
   box-shadow: 0px 0px 1px rgba(255, 255, 255, 0.4);
-  background-color: inherit;
+  background-color: #444;
   padding: 8px 24px;
   margin-right: 8px;
   margin-top: 10px;
@@ -5097,7 +5097,7 @@ h1 {
   font-size: 2.375em;
   line-height: 1.12280702;
   font-weight: normal;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #666;
   margin-bottom: 23px;
 }
 h1 ~ h1,
@@ -5116,7 +5116,7 @@ h2 {
   line-height: 1.42222222;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #CCC;
 }
 h2 + h3 {
   margin-top: 24px;
@@ -5126,7 +5126,7 @@ h3 {
   line-height: 1.52380952;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #EEE;
 }
 h3 + h4 {
   margin-top: 24px;
@@ -5136,7 +5136,7 @@ h4 {
   line-height: 1.77777778;
   font-weight: normal;
   margin-bottom: 23px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #EEE;
 }
 h4 + h5 {
   margin-top: 24px;
@@ -5145,7 +5145,7 @@ h5 {
   font-size: 1.25em;
   line-height: 1.06666667;
   margin-bottom: 23px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #EEE;
 }
 h5 + h6 {
   margin-top: 24px;
@@ -5154,7 +5154,7 @@ h6 {
   font-size: 1.25em;
   line-height: 1.06666667;
   margin-bottom: 23px;
-  border-bottom: 1px solid #777;
+  border-bottom: 1px solid #EEE;
 }
 p {
   margin-bottom: 24px;
@@ -5357,7 +5357,7 @@ hr::after {
   top: -0.7em;
   left: 50%;
   padding: 0 0.25em;
-  background-color: none;
+  background-color: #fff;
 }
 /**
  * Layout style for general structure of header, navbar, main, footer
@@ -5525,16 +5525,6 @@ body {
   width: 19.79166667%;
   margin-left: 0.52083333%;
   margin-right: 0.52083333%;
-}
-.article .figure {
-  max-width: 300px;
-}
-.article .figure img {
-  width: 100%;
-}
-.article .figure.right {
-  max-width: 300px;
-  float: right;
 }
 /***
 * Responsive

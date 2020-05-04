@@ -1,6 +1,5 @@
 /*!
- * Standard theme for kmom05
- *
+ * Theme for designelements in kmom06
  */
 /**
 * Imports the base theme 
@@ -5899,7 +5898,8 @@ body {
   color: #afafaf;
 }
 .inner-wrap-header {
-  background-color: #ba2de0;
+  background-color: #a42ac5;
+  background: linear-gradient(90deg, #81219b 0%, #ba2de0 50%, #81219b 100%);
   color: #0c002f;
   border-bottom: 2px solid #0c002f;
 }
@@ -5949,6 +5949,25 @@ body {
   color: #ba2de0;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #1fb7e6, rgba(0, 0, 0, 0));
 }
+.inner-wrap-footer hr::after {
+  background-color: transparent;
+}
+.rm-desktop {
+  background-color: transparent;
+}
+.rm-desktop li a {
+  background-color: transparent;
+  text-decoration-color: #1fb7e6 !important;
+}
+.rm-desktop li a:hover {
+  background-color: transparent;
+  color: #1fb7e6;
+  text-shadow: 2px 0px 0px #000;
+}
+.outer-wrap-footer {
+  background-color: #0b0324;
+  background: linear-gradient(0deg, #0b0324 20%, #0c002f 100%);
+}
 /**
 * Font styles
 */
@@ -5958,6 +5977,15 @@ h3,
 h4,
 h5 {
   text-shadow: 2px 2px #1fb7e6;
+  border-color: #ba2de0;
+}
+h1::after,
+h2::after,
+h3::after,
+h4::after,
+h5::after {
+  content: "•";
+  font-size: 16px;
 }
 /**
 * variables

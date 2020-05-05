@@ -1,0 +1,190 @@
+/*!
+ * Theme for designprinciples in kmom06
+ */
+
+/**
+* Imports the base theme 
+*/
+@import "kmom04.less";
+
+/**
+* Import modules
+*/
+@import "@desinax/figure/less/style.less";
+
+/**
+* Fonts
+*/
+//roboto
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap');
+//2p
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
+/**
+* Extra styling
+*/
+body {
+    color: @lightTextColor;
+}
+
+a {
+    color: @accentColor;
+}
+
+// header
+.outer-wrap-header {
+    // box-shadow: 0px 10px 8px -3px rgba(0,0,0,0.75);
+    margin-bottom: 20px;
+}
+
+.inner-wrap-header {
+    background-color: @headerBg;
+    color: @accentDark;
+}
+
+.rm-desktop {
+    background-color: @primaryColor;
+
+    li a {
+        // background-color: @primaryColor;
+        // color: @accentColor;
+        background-color: @accentColor;
+        color: @white;
+        box-shadow: -4px 4px 2px -2px rgba(0,0,0,0.6);
+
+        &:hover {
+            background-color: @accentColor;
+            color: @white;
+            box-shadow: -6px 6px 2px -2px rgba(0,0,0,0.6);
+            margin-left: 4px;
+        }
+    }
+}
+
+.rm-mobile {
+    background-color: @bgColor !important;
+    color: @accentColor;
+    box-shadow: 0 0 6px @accentDarker;
+
+    a {
+        &:hover {
+            color: @accentDark;
+            text-decoration-color: @accentColor !important;
+        }
+    }
+
+}
+
+.rm-button {
+    .rm-clicked {
+        color: @accentColor !important;
+    }
+}
+
+.rm-max .rm-mobile .rm-submenu-button {
+    background-color: @accentColor;
+    color: @white;
+}
+
+
+.site-logo-text {
+    a {
+        font-family: @retro;
+        color: @accentColor;
+        text-decoration: none;
+
+        &:hover {
+            color: @accentColor;
+        }
+    }
+}
+
+.outer-wrap-main {
+    background-color: #fff;
+}
+
+.inner-wrap-main {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    // box-shadow: inset 20px 20px 7px -10px rgba(0,0,0,1);
+}
+
+// Flash image
+.region-flash img{
+    box-shadow: 0px 15px 13px -9px @accentDarker;
+}
+
+
+
+// footer
+.inner-wrap-footer {
+    // border-top: 2px solid @accentColor;
+    color: @lightTextColor;
+
+    a {
+        color: @white;
+        &:hover {
+            color: @accentDark;
+            text-shadow: none !important;
+        }
+    }
+
+    h4 {
+        color: @primaryColor;
+    }
+
+    hr {
+        color: @primaryColor;
+        background-image: linear-gradient(to right,rgba(0,0,0,0), @darkBlue,rgba(0,0,0,0));
+
+        &::after {
+            background-color: transparent;
+        }
+    }
+}
+
+.outer-wrap-footer {
+    background-color: @accentColor;
+    box-shadow: inset 0px 10px 10px -10px rgba(0,0,0,0.6);
+}
+
+
+/**
+* Font styles
+*/
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: @accentColor;
+    border-color: @primaryColor;
+}
+
+/**
+* variables
+*/
+@black: #000;
+@white: #fff;
+@darkGrey: #212121;
+@lightGrey: #303030;
+@darkBlue: #0c002f;
+@darkerBlue: #0c002f;
+@lightBlue: #1fb7e6;
+
+@primaryColor: @white;
+@primaryDarker: #151418;
+@headerBg: @white;
+@bgColor: @white;
+@accentColor: @lightBlue;
+@accentDarker: darken(@accentColor, 20%);
+@accentDark: @darkBlue;
+@lightTextColor: @black;
+@footerBg: @white;
+
+@fontFamilyRoboto: 'Roboto Mono', monospace;
+@retro: 'Roboto Mono', monospace;
+
+@fontFamilyHeadings: @retro;
+@fontFamilyBody: @fontFamilyRoboto;
+@fontFamilyCode: @fontFamilyCourier;
